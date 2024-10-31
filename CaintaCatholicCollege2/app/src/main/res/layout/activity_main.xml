@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/sealImage"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/seal"
+        android:textAlignment="center" />
+
+
+    <FrameLayout
+        android:id="@+id/lay"
+        android:layout_width="410dp"
+        android:layout_height="284dp"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+
+        android:layout_below="@id/sealImage"
+        android:layout_marginTop="13dp"
+
+        > <!-- Use the border drawable here -->
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+
+             />
+    </FrameLayout>
+
+
+    <!-- CardView for Admission -->
+    <!-- CardView for Admission -->
+    <!-- CardView for Admission -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="169dp"
+        android:layout_height="107dp"
+        android:layout_below="@id/lay"
+        android:layout_marginStart="19dp"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_shape"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_shape"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="110dp"
+                android:layout_height="52dp"
+                android:padding="3dp"
+                android:src="@drawable/admission" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Admission"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for About Us -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="170dp"
+        android:layout_height="106dp"
+        android:layout_below="@id/cardView1"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#EDEEF0"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_shape"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="110dp"
+                android:layout_height="52dp"
+                android:padding="3dp"
+                android:src="@drawable/info" /> <!-- Use the appropriate drawable -->
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="About Us"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for Academics -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="170dp"
+        android:layout_height="106dp"
+        android:layout_below="@id/lay"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/cardView1"
+        app:cardBackgroundColor="#1228A2"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_shape"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="110dp"
+                android:padding="3dp"
+                android:layout_height="52dp"
+                android:src="@drawable/academics" /> <!-- Use the appropriate drawable -->
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Academics"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for Contact Us -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="170dp"
+        android:layout_height="106dp"
+        android:layout_below="@id/cardView3"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/cardView2"
+        app:cardBackgroundColor="#1228A2"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_shape"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="110dp"
+                android:layout_height="52dp"
+                android:padding="3dp"
+                android:src="@drawable/contact" /> <!-- Use the appropriate drawable -->
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Contact Us"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for Web Master -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="170dp"
+        android:layout_height="106dp"
+        android:layout_below="@id/cardView4"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#1228A2"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_shape"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon5"
+                android:layout_width="110dp"
+                android:padding="3dp"
+                android:layout_height="52dp"
+                android:src="@drawable/master" /> <!-- Use the appropriate drawable -->
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Web Master"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/cardView5"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="13dp"
+        android:text="Copyright 2024 — Cainta Catholic College. All rights reserved."
+        android:textAlignment="center" />
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#4EA9E8</color>
+    <color name="color_secondary">#4A53EF</color>
+    <color name="color_center">#FEF100</color>
+    <color name="color_stroke">#878787</color>
+    <color name="primaryColor">#3F51B5</color> <!-- Replace with your desired primary color -->
+    <color name="primaryColorDark">#303F9F</color> <!-- Darker shade of primary color -->
+    <color name="accentColor">#FF4081</color> <!-- Accent color for buttons, highlights -->
+
+    <!-- Background and text colors -->
+    <color name="lightGray">#F5F5F5</color> <!-- Background color of the layout -->
+    <color name="textPrimary">#212121</color> <!-- Primary text color -->
+    <color name="textSecondary">#757575</color> <!-- Secondary text color -->
+
+    <!-- Button and icon colors -->
+    <color name="buttonColor">#FF5722</color> <!-- Button background color -->
+    <color name="iconColor">#757575</color> <!-- Icon color -->
+
+    <!-- Additional colors -->
+    <color name="white">#FFFFFF</color> <!-- White color for text or background -->
+    <color name="primaryTextColor">#212121</color>
+    <color name="secondaryTextColor">#757575</color>
+    <color name="backgroundColor">#F5F5F5</color>
+    <color name="circle_background">#FFFFFF</color> <!-- Example for white -->
+
+
+    <color name="primaryDarkColor">#3700B3</color>
+
+    <color name="splashBackgroundColor">#FFFFFF</color> <!-- Custom color for splash background -->
+    <color name="yourSplashColor">#FFBB86FC</color> <!-- Another custom color -->
+
+
+
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background Layer: White Circle -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" /> <!-- Background color of the circle -->
+        </shape>
+    </item>
+
+    <!-- Optional Stroke (Border) Layer -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent"/> <!-- Transparent center -->
+            <stroke
+                android:width="2dp"
+                android:color="#FF0000" /> <!-- Border color and thickness (red in this case) -->
+        </shape>
+    </item>
+
+</layer-list>
